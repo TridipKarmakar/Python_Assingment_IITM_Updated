@@ -30,4 +30,33 @@
 # Score_dict = {subject : int(score) for subject, score in batsman_run}
 # print(Score_dict)
 
+# nums= [1,3,4,5]
 
+# print("{nums[1]:.3f}")
+import random
+
+# print(num)
+random.seed(42)
+i = 0
+status = False
+while status != True :
+    # num = random.randint(0,100)
+    # if num == 0 :
+    #     print(num)
+    #     break 
+    # if i % 10 == 0 :
+    #     print(num,end = "\n")
+    # else :
+    #     print(num,end = ",")
+    # i += 1
+    for i in range(1,11) :
+        num = random.randint(0,100)
+        if i == 10 :
+            print(num, end="\n")
+        elif num == 0 :
+            print(num)
+            status = True
+            break     
+        else :
+            print(num, end = ",")
+    
