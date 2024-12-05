@@ -1,4 +1,5 @@
 # GRPA 1
+# practice done
 # Initialize a dictionary to store win counts for each team
 teams = {
     "CSK": 0,
@@ -27,6 +28,8 @@ for team, wins in sorted_teams:
 
 
 # GRPA 2
+
+# practice done
 def merge(D1, D2, priority):
     """
     Merge two dictionaries.
@@ -67,6 +70,7 @@ def merge(D1, D2, priority):
 
     return D
 #GRPA 3 
+# practice done
 def minor_matrix(M, i, j):
     """
     Compute the "minor matrix" by removing the i-th row and j-th column from the matrix M.
@@ -84,26 +88,9 @@ def minor_matrix(M, i, j):
         [M[x][y] for y in range(len(M)) if y != j]  # Exclude the j-th column
         for x in range(len(M)) if x != i  # Exclude the i-th row
     ]
-#GRPA 3 
-def minor_matrix(M, i, j):
-    """
-    Compute the "minor matrix" by removing the i-th row and j-th column from the matrix M.
 
-    Arguments:
-        M: list of lists (square matrix)
-        i: integer (index of the row to remove)
-        j: integer (index of the column to remove)
-
-    Returns:
-        M_ij: list of lists (minor matrix with i-th row and j-th column removed)
-    """
-    # Create the minor matrix by removing the i-th row and j-th column
-    return [
-        [M[x][y] for y in range(len(M)) if y != j]  # Exclude the j-th column
-        for x in range(len(M)) if x != i  # Exclude the i-th row
-    ]
 # GRPA 4
-
+#practice done
 import json
 
 def create_station_dict(n):
