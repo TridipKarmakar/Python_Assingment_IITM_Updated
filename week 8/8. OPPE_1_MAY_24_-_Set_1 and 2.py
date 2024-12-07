@@ -7,7 +7,7 @@ def abs_diff_between_sum_and_sum_of_squares(a:int, b:int) -> int:
     sum is 5
     sum of squares is 13 
     absolute difference is 8
-
+    
     Args:
         a - int : The first integer.
         b - int : The second integer.
@@ -24,7 +24,7 @@ def abs_diff_between_sum_and_sum_of_squares(a:int, b:int) -> int:
 
     # absolute value
     abs_diff = abs(sum_ab-sum_sq)
-
+    
     # return
     return abs_diff
 
@@ -93,7 +93,7 @@ def interleave_lists(list1, list2, list3):
     # return
     return interleaved_list
 
-#practice done
+# practice done
 def has_more_than_5_unique_digits(num: int) -> bool:
     '''
     Determine if a given integer has more than 5 unique digits.
@@ -117,7 +117,7 @@ def has_more_than_5_unique_digits(num: int) -> bool:
     # return ans
     return ans
 
-#practice done
+# practice done
 def final_position(pos: tuple, vel: tuple, time:int) -> tuple:
     '''
     Given an initial position of a point moving in a cartesian plane with a constant velocity, 

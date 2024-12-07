@@ -319,6 +319,7 @@ def display_float_nums_over_multiple_lines(nums:list):
     print(*[f"{num:.3f}" for num in nums], sep="\n")
 
 # homogeneous - indefinite
+# practice Done 
 def display_random_ints(seed:int):
     '''
     Given a random seed, set the random seed and 
@@ -346,6 +347,7 @@ def display_random_ints(seed:int):
         print(num,end=',')
 
 # hybrid - single line
+# Practice Done
 def display_batsman_runs(name:str, number:int, runs:list):
     '''
     Given name, number and runs scored by a batsman
@@ -360,6 +362,7 @@ def display_batsman_runs(name:str, number:int, runs:list):
     print(name, number, *runs, sep=",")
 
 # key value
+# practice Done
 def display_course_scores(course_scores:dict):
     '''
     Given a dictionary of course scores with 
@@ -381,6 +384,7 @@ def display_course_scores(course_scores:dict):
     # alternate solution
     # print(*(f"{course}:{score}" for course, score in sorted(course_scores.items())),sep="\n")
 
+#practice done
 def display_all_batsman_runs(batsman_runs:list):
     '''
     Given a list of tuple of batsman runs, 
@@ -409,7 +413,7 @@ def display_all_batsman_runs(batsman_runs:list):
     for batsman, runs in batsman_runs:
         print(f"{batsman}-{','.join(map(str,runs))}")
     '''
-
+# practice done
 def display_student_marks(student_marks:list):
     '''
     Given the student rollno, city, age and marks of 
@@ -433,7 +437,7 @@ def display_student_marks(student_marks:list):
     attrs = ['rollno','city','age','course1','course2','course3']
     for student in student_marks:
         print(*(student[attr] for attr in attrs), sep=",")
-
+# practice done
 def display_student_marks_over_multiple_lines(student_marks:list):
     '''
     Same input as the above function, but print each attribute 
@@ -461,6 +465,7 @@ def display_student_marks_over_multiple_lines(student_marks:list):
         print(*(student[attr] for attr in attrs), sep="\n")
 
 #WEEK06_GRPA03
+#practice done
 def is_num_sorted(num)->bool:
     '''
     Check if a number is sorted.
@@ -474,7 +479,7 @@ def is_num_sorted(num)->bool:
     num_str = str(num)
     num_str_sorted = "".join(sorted(list(num_str)))
     return num_str == num_str_sorted
-
+# practice done
 def sorted_num_count(nums:list) -> int:
     '''
     Given a list of nums(int) find the count of sorted numbers in the list.
@@ -486,6 +491,7 @@ def sorted_num_count(nums:list) -> int:
     return len(list(filter(is_num_sorted, nums)))
     # another approach - can also use comprehensions
     # return sum(map(well_behaved, nums)) # sum of boolean will be the count
+
 
 def common_substring(words:list)->str:
     '''
